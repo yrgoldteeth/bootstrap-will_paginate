@@ -8,10 +8,12 @@ The real hard work done on the renderer initializer was written by [Isaac Bowen]
 ## Installation
 
 Add to your Gemfile:  
+    
     gem 'bootstrap-will_paginate'
 
 
+Copyright (c) 2011 [Nicholas Fine](http://ndfine.com), [Isaac Bowen](http://isaacbowen.com) released under the MIT license  
 
 [wp]: http://github.com/mislav/will_paginate
 [bs]: http://twitter.github.com/bootstrap
-[is]: http://isaacbowen.com/blog/using-will_paginate-action_view-and-bootstrap
+[is]: https://gist.github.com/1182136
