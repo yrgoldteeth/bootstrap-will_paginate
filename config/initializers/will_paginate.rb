@@ -3,6 +3,8 @@
 # This extension code was written by Isaac Bowen, originally found
 # at http://isaacbowen.com/blog/using-will_paginate-action_view-and-bootstrap/
 
+require 'will_paginate/view_helpers/action_view'
+
 module WillPaginate
   module ActionView
     def will_paginate(collection = nil, options = {})
