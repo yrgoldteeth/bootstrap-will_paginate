@@ -1,4 +1,5 @@
 require "bootstrap-will_paginate/version"
+require 'will_paginate'
 
 module Bootstrap
   module Willpaginate
