@@ -14,7 +14,7 @@ Add to your Gemfile:
 If you need support for Bootstrap 3.0.0, the changes have been merged into the
 master branch but not released to Rubygems.  Add to your Gemfile like so:
 
-    gem 'bootstrap-will_paginate', :git => git://github.com/yrgoldteeth/bootstrap-will_paginate.git
+    gem 'bootstrap-will_paginate', :git => 'git://github.com/yrgoldteeth/bootstrap-will_paginate.git'
 
 ### Usage
 
