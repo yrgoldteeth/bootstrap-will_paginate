@@ -10,6 +10,11 @@ The real hard work done on the renderer initializer was written by [Isaac Bowen]
 Add to your Gemfile:  
     
     gem 'bootstrap-will_paginate'
+    
+If you need support for Bootstrap 3.0.0, the changes have been merged into the
+master branch but not released to Rubygems.  Add to your Gemfile like so:
+
+    gem 'bootstrap-will_paginate', :git => git://github.com/yrgoldteeth/bootstrap-will_paginate.git
 
 ### Usage
 
