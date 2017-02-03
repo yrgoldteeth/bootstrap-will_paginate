@@ -5,6 +5,10 @@ in Twitter's [Bootstrap][bs] toolkit.
 
 The real hard work done on the renderer initializer was written by [Isaac Bowen][is].
 
+### Demo picture
+
+![Demo of boostrap-will_paginate](boostrap-will_paginate.png)
+
 ### Installation
 
 Add to your Gemfile:  
