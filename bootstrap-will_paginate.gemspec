@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.name        = "bootstrap-will_paginate"
   s.version     = Bootstrap::Willpaginate::VERSION
   s.authors     = ["Nicholas Fine", "Isaac Bowen"]
-  s.email       = ["nicholas.fine@gmail.com", "ikebowen@gmail.com"]
-  s.homepage    = "http://ndfine.com/2011/12/17/twitter-bootstrap-will-paginate.html"
+  s.email       = ["nick@ndfine.com", "ikebowen@gmail.com"]
+  s.homepage    = "https://github.com/yrgoldteeth/bootstrap-will_paginate"
   s.summary     = %q{Format will_paginate html to match Twitter Bootstrap styling.}
   s.description = %q{Hooks into will_paginate to format the html to match Twitter Bootstrap styling.  Extension code was originally written by Isaac Bowen (https://gist.github.com/1182136).}
 
