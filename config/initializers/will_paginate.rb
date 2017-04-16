@@ -31,8 +31,7 @@ module WillPaginate
       end
 
       def previous_or_next_page(page, text, classname)
-        tag :li, link(text, page || '#'),
-	    :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page)].join(' ')
+        tag :li, link(text, page || '#'), :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page)].join(' ')
       end
     end
 
@@ -57,8 +56,7 @@ module WillPaginate
       end
 
       def previous_or_next_page(page, text, classname)
-        tag :li, link(text, page || '#', :class => 'page-link'),
-      :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page), 'page-item'].join(' ')
+        tag :li, link(text, page || '#', :class => 'page-link'), :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page), 'page-item'].join(' ')
       end
     end
   end
