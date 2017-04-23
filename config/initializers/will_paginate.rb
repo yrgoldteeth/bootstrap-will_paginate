@@ -19,7 +19,7 @@ module WillPaginate
       protected
 
       def html_container(html)
-        tag :div, tag(:ul, html, :class => "pagination"), container_attributes
+        tag :nav, tag(:ul, html, :class => "pagination"), container_attributes
       end
 
       def page_number(page)
