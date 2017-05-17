@@ -26,6 +26,18 @@ To use Bootstrap 4 version:
 
     <%= will_paginate(@things, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
 
+### Size and Alignment of the Pagination Component
+
+You can easily change the pagination components' appearance by passing the correct Bootstrap classes as options:
+
+Sizing(Bootstrap 3 & 4): Add `.pagination-lg` or `.pagination-sm` for additional sizes.
+
+    <%= will_paginate(@things, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer, class: 'pagination-lg') %>
+
+Alignment (Bootstrap 4 only): Change the alignment of pagination components using Boostrap 4 Flexbox utilities
+
+    <%= will_paginate(@things, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer, class: 'justify-content-center') %>
+
 Copyright (c) 2017 [Nicholas Fine](https://twitter.com/yrgoldteeth), [Isaac Bowen](http://isaacbowen.com) released under the MIT license
 
 [wp]: https://github.com/mislav/will_paginate
