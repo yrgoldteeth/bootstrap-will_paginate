@@ -20,7 +20,7 @@ Add to your Gemfile:
 Just like you would in the regular [will_paginate][wp].  If you've got a need to use the default will_paginate stylings,
 pass an option like so:
 
-    <%= will_paginate(@things, :renderer => WillPaginate::ActionView::LinkRenderer) %>
+    <%= will_paginate(@things, :renderer => WillPaginate::ActionView::BootstrapLinkRenderer) %>
 
 To use Bootstrap 4 version:
 
