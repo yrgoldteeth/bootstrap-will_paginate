@@ -19,7 +19,9 @@ module WillPaginate
       protected
 
       def html_container(html)
-        tag :nav, tag(:ul, html, class: ul_class)
+        cont_attr = container_attributes
+        cont_attr[:class].slice! "pagination" if cont_attr[:class].present?
+        tag :div, tag(:ul, html, :class => "pagination"), cont_attr
       end
 
       def page_number(page)
