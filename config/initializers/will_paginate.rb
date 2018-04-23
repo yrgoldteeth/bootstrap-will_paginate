@@ -31,7 +31,12 @@ module WillPaginate
       end
 
       def previous_or_next_page(page, text, classname)
-        tag :li, link(text, page || '#'), :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page)].join(' ')
+        if page
+          tag :li, link(text, page),
+            :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links])].join(' ')
+        else
+          tag :li, tag(:span, text), :class => classname + ' disabled'
+        end
       end
 
       def ul_class
