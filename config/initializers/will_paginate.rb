@@ -64,7 +64,7 @@ module WillPaginate
       end
 
       def ul_class
-         ["pagination", container_attributes[:class]].compact.join(" ")
+         ["pagination flex-wrap", container_attributes[:class]].compact.join(" ")
       end
     end
   end
