@@ -1,3 +1,5 @@
+# I haven't used this gem in years and I don't have the time to keep it updated. Happy to give it to someone actively using it.
+
 ## [Will Paginate][wp] link renderer styles for [Twitter Bootstrap 3/4][bs]
 
 Rails Engine that extends [will_paginate][wp] stylings to match the pagination styling conventions
