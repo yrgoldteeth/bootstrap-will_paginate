@@ -40,6 +40,34 @@ Alignment (Bootstrap 4 only): Change the alignment of pagination components usin
 
     <%= will_paginate(@things, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer, class: 'justify-content-center') %>
 
+## Development
+
+### Building changelog
+
+easy way is using `git changelog` from `git-extras` project:
+
+```
+brew instal git-extras
+```
+
+
+```
+# tag the new version you want (major/minor/patch):
+VER=v2.1.0
+git tag $VER -m "$VER"
+
+git changelog # will open editor for CHANGELOG.md file
+
+git add CHANGELOG.md
+
+git commit -m "Release $VER"
+
+```
+
+Optionally, the flag `--no-merges` will filter out the merge commits
+
+---
+
 Copyright (c) 2017 [Nicholas Fine](https://twitter.com/yrgoldteeth), [Isaac Bowen](http://isaacbowen.com) released under the MIT license
 
 [wp]: https://github.com/mislav/will_paginate
