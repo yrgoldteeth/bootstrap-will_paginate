@@ -28,6 +28,10 @@ To use Bootstrap 4 version:
 
     <%= will_paginate(@things, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
 
+To use Bootstrap 2 version:
+
+    <%= will_paginate(@things, :renderer => WillPaginate::ActionView::Bootstrap2LinkRenderer) %>
+
 ### Size and Alignment of the Pagination Component
 
 You can easily change the pagination components' appearance by passing the correct Bootstrap classes as options:
