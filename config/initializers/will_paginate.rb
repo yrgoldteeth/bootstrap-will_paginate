@@ -30,8 +30,8 @@ module WillPaginate
         tag :li, link('&hellip;'.html_safe, '#'), :class => 'disabled'
       end
 
-      def previous_or_next_page(page, text, classname)
-        tag :li, link(text, page || '#'), :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page)].join(' ')
+      def previous_or_next_page(page, text, classname, aria_label = nil)
+        tag :li, link(text, page || '#'), :'aria-label' => aria_label, :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page)].join(' ')
       end
 
       def ul_class
@@ -59,8 +59,8 @@ module WillPaginate
         tag :li, link('&hellip;'.html_safe, '#', :class => 'page-link'), :class => 'page-item disabled'
       end
 
-      def previous_or_next_page(page, text, classname)
-        tag :li, link(text, page || '#', :class => 'page-link'), :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page), 'page-item'].join(' ')
+      def previous_or_next_page(page, text, classname, aria_label = nil)
+        tag :li, link(text, page || '#', :class => 'page-link'), :'aria-label' => aria_label, :class => [(classname[0..3] if  @options[:page_links]), (classname if @options[:page_links]), ('disabled' unless page), 'page-item'].join(' ')
       end
 
       def ul_class
